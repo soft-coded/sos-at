@@ -1,0 +1,59 @@
+@import "../../variables.scss";
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background: {
+    image: url(../../images/hero-bg.jpg);
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+    attachment: fixed;
+  }
+  
+  .inner {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      margin: 20px 0;
+      position: relative;
+      letter-spacing: 2px;
+      font-weight: 500;
+      
+      &::before {
+        content: "\2714";
+        font-size: 3rem;
+        position: absolute;
+        top: -100%;
+        left: -18%;
+        color: $primary
+      }
+    }
+
+    button {
+      font-size: 1rem;
+      margin-top: 30px;
+      transition: $transition-1;
+      color: $light-1;
+      background-color: $primary;
+      cursor: pointer;
+
+      @media (hover: hover) {
+        &:hover, &:active, &:focus {
+          box-shadow: 0 0 15px $light-1;
+        }
+      }
+    }
+  }
+
+}

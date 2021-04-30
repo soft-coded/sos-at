@@ -1,0 +1,60 @@
+@import "../../variables.scss"; 
+
+.second {
+  @include bg-gradient($angle-left);
+  color: $dark-1;
+  display: flex;
+  overflow: hidden;
+
+  .slider {
+    margin: 100px 0;
+    text-align: center;
+  }
+  
+  .second-detail {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    color: $light-1;
+    margin: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $secondary-light;
+    box-shadow: $shadow-1;
+    transition: $transition-1;
+    
+    &:active, &:focus {
+      transform: scale(1.025);
+    }
+    
+    @media (hover: hover){
+      &:hover {
+        transform: scale(1.025);
+      }
+    }
+
+    img {
+      width: 200px;
+    }
+
+    h1 {
+      margin: 20px 0;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.slick-prev {
+  left: -4%;
+}
+
+.slick-next::before, .slick-prev::before {
+	color: black;
+  font-size: 2rem;
+}

@@ -1,0 +1,55 @@
+@import "../../variables.scss";
+
+.third {
+  @include bg-gradient($angle-right);
+  overflow: hidden;
+  letter-spacing: 2px;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 100px 0;
+    gap: 2rem;
+
+    .grid-item {
+      z-index: 1;
+      background-color: $secondary-light;
+      padding: 20px 40px;
+      border-radius: 10px;
+      box-shadow: $shadow-1;
+      transition: $transition-1;
+
+      &:active, &:focus {
+        transform: scale(1.05)
+      }
+
+      @media (hover: hover){
+        &:hover, &:active, &:focus {
+          transform: scale(1.05)
+        }
+      }
+      
+      header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        
+        img {
+          width: 100px;
+          margin-right: 30px;
+        }
+      }
+
+      ul {
+        list-style-position: inside;
+        list-style-type: "\2714   ";
+        font-weight: 600;
+
+        li {
+          margin: 20px 0;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  } 
+}

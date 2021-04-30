@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Permanent+Marker&display=swap');
+
+// Colours
+$light-1: #fff;
+$light-2: rgb(221, 221, 221);
+$light-3: rgb(189, 189, 189);
+$dark-1: #000;
+$dark-2: rgb(36, 36, 36);
+$dark-3: rgb(58, 58, 58);
+$primary: #39b54a;
+$primary-dark: #2f883b;
+$primary-light: #50ce61;
+$secondary: brown;
+$secondary-light: rgb(189, 58, 58);
+$secondary-dark: rgb(167, 70, 70);
+
+// Fonts
+$default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+sans-serif;
+$primary-font-1: "Poppins", "sans-serif";
+$display-font: "Permanent Marker", cursive;
+
+// Misc
+$transition-1: all 0.3s ease-in-out;
+$shadow-1: 0 0 10px $dark-3;
+$shadow-2: 0 0 10px $light-3;
+@mixin bg-gradient($deg){
+  background-image: linear-gradient($deg, $secondary-dark 50%, $primary 50%);
+}
+$angle-left: 170deg;
+$angle-right: 10deg;
+$navbar-z-index: 9;
