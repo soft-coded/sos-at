@@ -1,0 +1,87 @@
+@import "../../variables.scss";
+
+footer {
+  background-color: $dark-1;
+  padding: 30px 0;
+  color: $light-3;
+  letter-spacing: 2px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    .desc {
+      max-width: 20%;
+    }
+
+    .site-links {
+      width: 25%;
+    }
+
+    .newsletter {
+      max-width: 20%;
+
+      form {
+        margin-top: 20px;
+        display: flex;
+
+        input::placeholder {
+          color: $dark-1;
+        }
+
+        input {
+          border: none;
+          max-width: 90%;
+          padding: 0 15px;
+          border-radius: 5px 0 0 5px;
+          font-family: inherit;
+          font-size: 1.1rem;
+          letter-spacing: 1px;
+          font-weight: 600;
+          background-color: $primary;
+        }
+        
+        button {
+          border-radius: 0 5px 5px 0;
+          font-size: 1.1rem;
+          color: $light-1;
+          background-color: $secondary;
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    color: $light-2;
+  }
+
+  ul {
+    list-style: none;
+    
+    li {
+      margin: 20px 0;
+    }
+  }
+
+  .copy {
+    text-align: center;
+    color: $light-1;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+
+.get-app {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  gap: 30px;
+
+  img {
+    width: 150px;
+    border: 2px solid $light-2;
+    border-radius: 10px;
+  }
+}

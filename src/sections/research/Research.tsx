@@ -8,7 +8,8 @@ const sliderSettings = {
 	infinite: true,
 	autoplay: true,
 	autoplaySpeed: 5000,
-	pauseOnHover: true
+	pauseOnHover: true,
+	fade: true
 };
 
 export default function Research() {

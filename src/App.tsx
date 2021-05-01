@@ -4,6 +4,7 @@ import Hero from "./sections/hero/Hero";
 import Second from "./sections/second/Second";
 import Third from "./sections/third/Third";
 import Research from "./sections/research/Research";
+import Footer from "./sections/footer/Footer";
 
 export default function App() {
 	return (
@@ -15,6 +16,7 @@ export default function App() {
 				<Second />
 				<Third />
 				<Research />
+				<Footer />
 			</main>
 		</>
 	);

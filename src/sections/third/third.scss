@@ -1,7 +1,7 @@
 @import "../../variables.scss";
 
 .third {
-  @include bg-gradient($angle-right);
+  @include bg-gradient($angle-left);
   overflow: hidden;
   letter-spacing: 2px;
 
