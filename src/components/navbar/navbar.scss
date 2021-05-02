@@ -19,6 +19,23 @@
 
     li {
       margin: 0 15px;
+      transition: $transition-1;
+
+      &:active, &:focus {
+        color: $primary-light;
+      }
+
+      @media (hover: hover){
+        &:hover {
+          color: $primary-light;
+        }
+      }
+
+      img {
+        width: 130px;
+        vertical-align: bottom;
+      }
+
     }
   }
 

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 import "./navbar.scss";
 import logo from "../../images/logo.png";
+import play from "../../images/playstore.png";
 
 export default function Navbar() {
 	useEffect(() => {
@@ -17,15 +18,28 @@ export default function Navbar() {
 			<div className="inner">
 				<ul>
 					<li className="logo-container">
-						<img className="logo" src={logo} alt="agrotick logo" />
+						<a href="/">
+							<img className="logo" src={logo} alt="agrotick logo" />
+						</a>
 					</li>
-					<li>Home</li>
-					<li>Features</li>
-					<li>You</li>
-					<li>Research</li>
-					<li>News</li>
-					<li>Impact</li>
-					<li>Contact</li>
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#second">Features</a>
+					</li>
+					<li>
+						<a href="#third">You</a>
+					</li>
+					<li>
+						<a href="#research">Research</a>
+					</li>
+					<li>
+						<a href="#footer">Contact</a>
+					</li>
+					<li>
+						<img src={play} alt="PlayStore" />
+					</li>
 				</ul>
 			</div>
 		</nav>

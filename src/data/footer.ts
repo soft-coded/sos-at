@@ -9,5 +9,12 @@ export default {
 		"Phone(USA): +1 650 352 3968",
 		"Phone(India): +91 94321 49839"
 	],
-	siteLinks: ["Home", "About Us", "Blogs", "FAQ", "Terms", "Privacy Policy"]
+	siteLinks: [
+		{ text: "Home", link: "/" },
+		{ text: "About Us", link: "https://systemonsilicon.com" },
+		{ text: "Blogs", link: "#" },
+		{ text: "FAQ", link: "#" },
+		{ text: "Terms", link: "#" },
+		{ text: "Privacy Policy", link: "#" }
+	]
 };

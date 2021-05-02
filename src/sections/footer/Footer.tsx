@@ -2,19 +2,46 @@ import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
 
 import "./footer.scss";
 import data from "../../data/footer";
-import play from "../../images/playstore.png";
-import appstore from "../../images/appstore.png";
+
+// function isScrolledIntoView(elem)
+// {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
+//     return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+// }
+
+// $(window).scroll(function() {
+//     if(isScrolledIntoView($('#theTarget')))
+//     {
+//         alert('visible');
+//     }
+// });
+
+// function scrolledIntoView(_class: string) {
+// 	let winTop = window.pageYOffset;
+// 	let winBottom = winTop + window.innerHeight;
+// 	let elemTop = document.querySelector<HTMLElement>(_class);
+// 	let elemBottom = elemTop.clientHeight;
+// }
 
 export default function Footer() {
 	return (
-		<footer>
+		<footer id="footer">
 			<div className="inner">
 				<div className="container">
 					<div className="desc">
 						{data.description}
 						<div className="icons">
-							<FaFacebookSquare color="blue" size={30} />
-							<FaTwitter color="lightblue" size={30} className="twitter" />
+							{/* eslint-disable-next-line */}
+							<a href="#">
+								<FaFacebookSquare color="blue" size={30} />
+							</a>
+							{/* eslint-disable-next-line */}
+							<a href="#">
+								<FaTwitter color="lightblue" size={30} className="twitter" />
+							</a>
 						</div>
 					</div>
 					<div className="contact">
@@ -29,7 +56,10 @@ export default function Footer() {
 						<h2>Site Links</h2>
 						<ul>
 							{data.siteLinks.map((item, i) => (
-								<li key={i}>{item}</li>
+								<li key={i}>
+									{/* eslint-disable-next-line */}
+									<a href={item.link}>{item.text}</a>
+								</li>
 							))}
 						</ul>
 					</div>
@@ -40,11 +70,6 @@ export default function Footer() {
 							<button type="button">Send</button>
 						</form>
 					</div>
-				</div>
-				<div className="get-app">
-					<h2>Download the app on:</h2>
-					<img src={play} alt="playstore" />
-					<img src={appstore} alt="appstore" />
 				</div>
 				<div className="copy">&copy; SystemOnSilicon</div>
 			</div>

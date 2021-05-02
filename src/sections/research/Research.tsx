@@ -15,7 +15,7 @@ const sliderSettings = {
 
 export default function Research() {
 	return (
-		<section className="research section">
+		<section id="research" className="research section">
 			<div className="inner">
 				<SectionHeader>
 					<h1>Problems Faced By Farmers</h1>
