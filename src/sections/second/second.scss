@@ -10,7 +10,7 @@
     background-color: $light-1;
     margin: 50px 0;
     padding: 30px;
-    border-radius: 75px;
+    border-radius: 20px;
     width: 100%;
     box-shadow: $shadow-2;
   }
@@ -24,7 +24,7 @@
 
     .container {
       background-color: $light-2;
-      border-radius: 50px;
+      border-radius: 20px;
       padding: 20px 30px;
       width: 100%;
       position: relative;
@@ -74,7 +74,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        border-radius: 50px;
+        border-radius: 20px;
         padding: 30px 60px;
 
         li {
