@@ -8,33 +8,55 @@ export default [
 	{
 		id: 1,
 		image: farmer,
+		direction: "l",
 		title: "Farmers First",
-		subtitle: "One stop solution for farmers",
-		content:
-			"Search for Jobs easily. Apply to Crop loans and insurance easily. Give vocational training and jobs to women. Provide subsidized education to children. Track financial support from government securely. Provide health and life insurance to family."
+		subtitle: "One stop solution",
+		content: [
+			"Search for jobs easily",
+			"Apply to crop loans and insurance easily",
+			"Give vocational training and jobs to women",
+			"Provide subsidized education to children",
+			"Track financial support from government securely",
+			"Provide health and life insurance to family"
+		]
 	},
 	{
 		id: 2,
 		image: growSmart,
-		title: "AGrow Smart",
-		subtitle: "Become tech savvy while farming",
-		content:
-			"Know the best sustainable practices for agriculture. Monitors the fields for nutrients, pH, irrigation, diseases. Know when to give medicines, nutrients, water, by how much."
+		direction: "r",
+		title: "Agro Smart",
+		subtitle: "Become tech savvy",
+		content: [
+			"Know the best sustainable practices",
+			"Monitors the fields for nutrients, pH, irrigation, diseases",
+			"Know when to give medicines, nutrients, water, by how much"
+		]
 	},
 	{
 		id: 3,
 		image: eMarket,
+		direction: "l",
 		title: "Agro Mart",
 		subtitle: "From soil to foil",
-		content:
-			"Buy seeds, medicines and fertilizers at best prices. Rent farm machinery & tech for a season at affordable prices. Know the retail market rates of produce. Sell the produce at just prices. Track the produce live, know the location of customers."
+		content: [
+			"Buy seeds, medicines and fertilizers at best prices",
+			"Rent farm machinery & tech for a season at affordable prices",
+			"Know the retail market rates of produce. Sell the produce at just prices",
+			"Track the produce live, know the location of customers"
+		]
 	},
 	{
 		id: 4,
 		image: agriNet,
+		direction: "r",
 		title: "Agro Net",
-		subtitle: "Collaborative and interactive ecosystem for farmers",
-		content:
-			"Connect with neighbouring farmers. Contact agro scientists and engineers for support 24x7. Compare yield of other regions. Get retail market updates 24x7. Stay up to date with government schemes and subsidies."
+		subtitle: "Collaborative ecosystem",
+		content: [
+			"Connect with neighbouring farmers",
+			"Contact agro scientists and engineers for support 24x7",
+			"Compare yield of other regions",
+			"Get retail market updates 24x7",
+			"Stay up to date with government schemes and subsidies"
+		]
 	}
 ];

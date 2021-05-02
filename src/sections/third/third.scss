@@ -22,12 +22,17 @@
 
       &:active, &:focus {
         
+        article {
+          transform: translateY(0%);
+          opacity: 1;
+        }
       }
-
+      
       @media (hover: hover){
         &:hover {
-
+          
           article {
+            transform: translateY(0%);
             opacity: 1;
           }
         }
@@ -35,13 +40,14 @@
 
       article {
         opacity: 0;
+        transform: translateY(10%);
         transition: $transition-1;
         z-index: 1;
         position: absolute;
         top: 0;
         left: 0;
         padding: 25px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(100, 100, 100, 0.95);
         height: 100%;
         border-radius: 50px;
       }
@@ -66,7 +72,7 @@
       }
 
       p {
-        color: $secondary-light;
+        color: $light-2;
         font-weight: 600;
         font-size: 0.9rem;
       }

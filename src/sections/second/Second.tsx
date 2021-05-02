@@ -13,10 +13,32 @@ export default function Second() {
 					{data.map(details => (
 						<div key={details.id}>
 							<div className="second-detail">
-								<img src={details.image} alt={details.title} />
-								<h1>{details.title}</h1>
-								<h2>{details.subtitle}</h2>
-								<p>{details.content}</p>
+								{details.direction === "l" && (
+									<img src={details.image} alt={details.title} />
+								)}
+								<div
+									className="container"
+									style={{
+										textAlign: details.direction === "r" ? "right" : "left",
+										margin:
+											details.direction === "r" ? "0 50px 0 0" : "0 0 0 50px"
+									}}
+								>
+									<h1>{details.title}</h1>
+									<h2>{details.subtitle}</h2>
+									<ul dir={details.direction === "r" ? "rtl" : null}>
+										<li>{details.content[0]}</li>
+										<li>{details.content[1]}</li>
+										<div className="hidden">
+											{details.content.slice(2).map((item, i) => (
+												<li key={i}>{item}</li>
+											))}
+										</div>
+									</ul>
+								</div>
+								{details.direction === "r" && (
+									<img src={details.image} alt={details.title} />
+								)}
 							</div>
 						</div>
 					))}
