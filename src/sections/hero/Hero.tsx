@@ -1,3 +1,5 @@
+import { BsFillCameraVideoFill } from "react-icons/bs";
+
 import "./hero.scss";
 
 export default function Hero() {
@@ -8,7 +10,10 @@ export default function Hero() {
 				<h2>Productivity</h2>
 				<h2>Connectivity</h2>
 				<h2>Sustainability</h2>
-				<button>(%) Watch Video</button>
+				<button>
+					<BsFillCameraVideoFill size={23} />
+					Watch Video
+				</button>
 			</div>
 		</section>
 	);

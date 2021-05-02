@@ -14,6 +14,16 @@ footer {
     .desc {
       max-width: 25%;
       align-self: center;
+
+      .icons {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .twitter {
+          margin: 0 20px;
+        }
+      }
     }
 
     .site-links {

@@ -46,6 +46,12 @@
       color: $light-1;
       background-color: $primary;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 10px;
+      }
 
       @media (hover: hover) {
         &:hover, &:active, &:focus {

@@ -1,3 +1,5 @@
+import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
+
 import "./footer.scss";
 import data from "../../data/footer";
 import play from "../../images/playstore.png";
@@ -10,7 +12,10 @@ export default function Footer() {
 				<div className="container">
 					<div className="desc">
 						{data.description}
-						<div className="icons">(%) (%)</div>
+						<div className="icons">
+							<FaFacebookSquare color="blue" size={30} />
+							<FaTwitter color="lightblue" size={30} className="twitter" />
+						</div>
 					</div>
 					<div className="contact">
 						<h2>Contact</h2>
