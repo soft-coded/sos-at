@@ -13,12 +13,14 @@
     background-color: $light-2;
     padding: 50px;
     border-radius: 50px;
+    box-shadow: $shadow-2;
 
     .grid-item {
       background-color: $light-1;
       padding: 20px 30px;
-      border-radius: 50px;
+      border-radius: 20px;
       position: relative;
+      box-shadow: $shadow-2;
 
       &:active, &:focus {
         
@@ -32,7 +34,7 @@
         &:hover {
           
           article {
-            transform: translateY(0%);
+            transform: translateX(0%);
             opacity: 1;
           }
         }
@@ -40,7 +42,7 @@
 
       article {
         opacity: 0;
-        transform: translateY(10%);
+        transform: translateX(-10%);
         transition: $transition-1;
         z-index: 1;
         position: absolute;
@@ -49,20 +51,20 @@
         padding: 25px;
         background-color: rgba(100, 100, 100, 0.95);
         height: 100%;
-        border-radius: 50px;
+        border-radius: 20px;
       }
       
       header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 10px;
         color: $primary;
         letter-spacing: 2px;
         
         img {
           width: 180px;
           transition: $transition-1;
+          margin-bottom: 10px;
         }
 
         h1 {

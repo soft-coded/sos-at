@@ -13,7 +13,7 @@ $primary-dark: #2f883b;
 $primary-light: #50ce61;
 $secondary: brown;
 $secondary-alpha: rgba(255, 1, 1, 0.5);
-$nav: maroon;
+$nav: white;
 $secondary-light: rgb(238, 105, 105);
 
 // Fonts
@@ -27,7 +27,7 @@ $display-font: "Permanent Marker", cursive;
 // Misc
 $transition-1: all 0.3s ease-in-out;
 $shadow-1: 0 0 10px $dark-3;
-$shadow-2: 0 0 10px $light-3;
+$shadow-2: 0 0 6px grey;
 $angle-left: 170deg;
 $angle-right: 10deg;
 $navbar-z-index: 9;

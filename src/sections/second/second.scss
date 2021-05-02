@@ -12,14 +12,15 @@
     padding: 30px;
     border-radius: 75px;
     width: 100%;
+    box-shadow: $shadow-2;
   }
   
   .second-detail {
     display: flex;
     align-items: center;
-    padding: 30px;
-    margin: 20px;
+    padding: 0 30px;
     border-radius: 10px;
+    margin: 40px 0;
 
     .container {
       background-color: $light-2;
@@ -27,13 +28,14 @@
       padding: 20px 30px;
       width: 100%;
       position: relative;
+      box-shadow: $shadow-2;
 
       @media (hover: hover) {
         &:hover {
 
           .hidden {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateX(0);
           }
         }
       }
@@ -64,7 +66,7 @@
 
       .hidden {
         transition: $transition-1;
-        transform: translateY(10%);
+        transform: translateX(-3%);
         opacity: 0;
         background-color: rgba(100, 100, 100, 0.95);
         position: absolute;
