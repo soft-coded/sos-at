@@ -2,6 +2,7 @@ import Slider from "react-slick";
 
 import data from "../../data/research";
 import "./research.scss";
+import SectionHeader from "../../components/section-header/SectionHeader";
 
 const sliderSettings = {
 	dots: true,
@@ -16,6 +17,9 @@ export default function Research() {
 	return (
 		<section className="research section">
 			<div className="inner">
+				<SectionHeader>
+					<h1>Problems Faced By Farmers</h1>
+				</SectionHeader>
 				<Slider {...sliderSettings} className="slider">
 					{data.map(details => (
 						<div key={details.id}>

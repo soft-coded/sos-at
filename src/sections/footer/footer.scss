@@ -12,7 +12,8 @@ footer {
     gap: 40px;
 
     .desc {
-      max-width: 20%;
+      max-width: 25%;
+      align-self: center;
     }
 
     .site-links {
@@ -26,10 +27,6 @@ footer {
         margin-top: 20px;
         display: flex;
 
-        input::placeholder {
-          color: $dark-1;
-        }
-
         input {
           border: none;
           max-width: 90%;
@@ -39,7 +36,8 @@ footer {
           font-size: 1.1rem;
           letter-spacing: 1px;
           font-weight: 600;
-          background-color: $primary;
+          background-color: $light-1;
+          color: $dark-1;
         }
         
         button {

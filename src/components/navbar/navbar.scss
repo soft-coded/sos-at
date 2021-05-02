@@ -9,6 +9,7 @@
   transition: $transition-1;
   z-index: $navbar-z-index;
   font-weight: 600;
+  padding: 10px 0;
 
   ul {
     list-style: none;
@@ -22,7 +23,7 @@
   }
 
   .logo {
-    width: 5rem;
+    width: 150px;
   }
 
   .logo-container {
@@ -31,7 +32,7 @@
 }
 
 .sticky {
-  background-color: $light-1;
-  color: $dark-1;
+  background-color: $nav;
+  color: $light-1;
   box-shadow: $shadow-1;
 }

@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+
+.section-header {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 50px 0;
+  color: $dark-3;
+  letter-spacing: 2px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid $secondary;
+    border-radius: 2px;
+    width: 3rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+  }
+}

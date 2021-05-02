@@ -1,21 +1,15 @@
-import Slider from "react-slick";
-
 import "./second.scss";
 import data from "../../data/second";
-
-const sliderSettings = {
-	dots: true,
-	infinite: true,
-	autoplay: true,
-	autoplaySpeed: 5000,
-	pauseOnHover: true
-};
+import SectionHeader from "../../components/section-header/SectionHeader";
 
 export default function Second() {
 	return (
 		<section id="second" className="second">
 			<div className="inner">
-				<Slider {...sliderSettings} className="slider">
+				<SectionHeader>
+					<h1>Our Services</h1>
+				</SectionHeader>
+				<div className="grid">
 					{data.map(details => (
 						<div key={details.id}>
 							<div className="second-detail">
@@ -26,7 +20,7 @@ export default function Second() {
 							</div>
 						</div>
 					))}
-				</Slider>
+				</div>
 			</div>
 		</section>
 	);
