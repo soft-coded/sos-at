@@ -3,6 +3,11 @@ import Slider from "react-slick";
 import data from "../../data/research";
 import "./research.scss";
 import SectionHeader from "../../components/section-header/SectionHeader";
+import vars from "../../variables";
+
+function matchWidth() {
+	return window.matchMedia("(max-width: " + vars.tabletWidth + ")").matches;
+}
 
 const sliderSettings = {
 	dots: true,
@@ -10,7 +15,7 @@ const sliderSettings = {
 	autoplay: true,
 	autoplaySpeed: 5000,
 	pauseOnHover: true,
-	fade: true
+	arrows: !matchWidth()
 };
 
 export default function Research() {
@@ -28,12 +33,15 @@ export default function Research() {
 								style={{
 									background: `url(${details.image}) no-repeat`,
 									backgroundPosition: "center",
-									backgroundSize: "cover",
-									backgroundBlendMode: "lighten"
+									backgroundSize: "cover"
 								}}
 							>
 								<h1>{details.title}</h1>
-								<p>{details.content}</p>
+								<p>
+									{matchWidth()
+										? details.content.substr(0, 500) + "..."
+										: details.content}
+								</p>
 							</div>
 						</div>
 					))}

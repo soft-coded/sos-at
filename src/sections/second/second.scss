@@ -2,12 +2,11 @@
 
 .second {
   color: $dark-1;
-  display: flex;
   overflow: hidden;
-  background-color: $light-2;
+  background-color: $primary-light;
 
   .grid {
-    background-color: $light-1;
+    background-color: $secondary-light;
     margin: 50px 0;
     padding: 30px;
     border-radius: 20px;
@@ -39,6 +38,10 @@
           }
         }
       }
+
+      @media (max-width: $tablet-width) {
+        padding: 20px 30px;
+      }
     }
 
     img {
@@ -59,12 +62,21 @@
     ul {
       list-style-type: "   \2714   ";
       padding: 0 30px;
+      
+      @media (max-width: $tablet-width){
+        padding: 0 10px;
+      }
 
       li {
         color: $dark-3;
+
+        @media (max-width: $tablet-width){
+          font-size: 0.9rem;
+        }
       }
 
       .hidden {
+        width: 100%;
         transition: $transition-1;
         transform: translateX(-3%);
         opacity: 0;
@@ -76,6 +88,11 @@
         bottom: 0;
         border-radius: 20px;
         padding: 30px 60px;
+        overflow: auto;
+
+        @media (max-width: $tablet-width){
+          padding: 20px 40px;
+        }
 
         li {
           color: $light-1;

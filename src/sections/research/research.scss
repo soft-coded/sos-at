@@ -1,8 +1,7 @@
 @import "../../variables.scss";
 
 .research {
-  background-image: linear-gradient($light-2, $light-3);
-  display: flex;
+  background-color: $primary-light;
   padding-bottom: 100px;
   
   .research-item {
@@ -14,10 +13,6 @@
     letter-spacing: 2px;
     transition: $transition-1;
 
-    &:active, &:focus {
-      transform: scale(1.025);
-    }
-    
     @media (hover: hover){
       &:hover {
         transform: scale(1.025);
@@ -26,6 +21,10 @@
 
     h1 {
       font-size: 2.2rem;
+
+      @media (max-width: $tablet-width) {
+        font-size: 1.8rem;
+      }
     }
 
     p {

@@ -11,9 +11,17 @@ footer {
     justify-content: space-between;
     gap: 40px;
 
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
+    }
+
     .desc {
       max-width: 25%;
       align-self: center;
+
+      @media (max-width: $tablet-width) {
+        max-width: unset;
+      }
 
       .icons {
         display: flex;
@@ -23,30 +31,50 @@ footer {
         svg {
           opacity: 0.7;
           transition: $transition-1;
-
-          &:hover, &:active, &:focus {
-            opacity: 1;
-          }
           
           @media (hover: hover){
             &:hover{
               opacity: 1;
             }
           }
+
+          @media (max-width: $tablet-width) {
+            opacity: 1;
+          }
         }
 
         .twitter {
-          margin: 0 20px;
+          margin-left: 20px;
         }
       }
     }
 
     .site-links {
-      width: 25%;
+      max-width: 25%;
+
+      @media (max-width: $tablet-width) {
+        max-width: unset;
+      }
+
+      ul {
+        
+        @media (max-width: $tablet-width) {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+      }
+
     }
 
     .newsletter {
       max-width: 20%;
+
+      @media (max-width: $tablet-width) {
+        max-width: unset;
+        margin-bottom: 30px;
+      }
 
       form {
         margin-top: 20px;
@@ -87,7 +115,7 @@ footer {
       margin: 20px 0;
       transition: $transition-1;
 
-      &:active, &:focus {
+      &:active {
         color: $light-1;
       }
       

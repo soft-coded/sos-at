@@ -1,8 +1,35 @@
+import { useEffect } from "react";
+
 import "./second.scss";
 import data from "../../data/second";
 import SectionHeader from "../../components/section-header/SectionHeader";
+import vars from "../../variables";
+
+function matchWidth() {
+	return window.matchMedia("(max-width: " + vars.tabletWidth + ")").matches;
+}
 
 export default function Second() {
+	useEffect(() => {
+		if (matchWidth()) {
+			const containers = document.querySelectorAll<HTMLElement>(
+				".second-detail .container"
+			);
+			containers.forEach(container => {
+				container.addEventListener("touchstart", () => {
+					const overlay = container.querySelector<HTMLElement>(".hidden");
+					if (overlay.style.opacity === "1") {
+						overlay.style.opacity = "0";
+						overlay.style.transform = "translateX(-3%)";
+					} else {
+						overlay.style.opacity = "1";
+						overlay.style.transform = "translateX(0)";
+					}
+				});
+			});
+		}
+	}, []);
+
 	return (
 		<section id="second" className="second">
 			<div className="inner">

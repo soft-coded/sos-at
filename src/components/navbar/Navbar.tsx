@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 
 import "./navbar.scss";
+import NavList from "./Navlist";
+import NavMob from "./NavMob";
 import logo from "../../images/logo.png";
 import play from "../../images/playstore.png";
 
@@ -13,35 +15,35 @@ export default function Navbar() {
 		});
 	}, []);
 
+	function handleOpen() {
+		const drawer = document.querySelector<HTMLElement>(".nav-side-menu")!;
+		const backdrop = document.querySelector<HTMLElement>(".backdrop")!;
+		drawer.style.transform = "translateX(0%)";
+		backdrop.style.display = "block";
+		backdrop.style.animation = "fade-in 0.3s ease-in-out forwards";
+	}
+
 	return (
-		<nav className="nav-pc">
-			<div className="inner">
-				<ul>
-					<li className="logo-container">
-						<a href="/">
-							<img className="logo" src={logo} alt="agrotick logo" />
-						</a>
-					</li>
-					<li>
-						<a href="#home">Home</a>
-					</li>
-					<li>
-						<a href="#second">Features</a>
-					</li>
-					<li>
-						<a href="#third">You</a>
-					</li>
-					<li>
-						<a href="#research">Research</a>
-					</li>
-					<li>
-						<a href="#footer">Contact</a>
-					</li>
-					<li>
-						<img src={play} alt="PlayStore" />
-					</li>
-				</ul>
-			</div>
-		</nav>
+		<>
+			<nav className="nav-pc">
+				<div className="inner">
+					<NavList />
+				</div>
+			</nav>
+			<nav className="nav-mob-top">
+				<div className="inner">
+					<button className="nav-mob-btn" onClick={handleOpen}>
+						<div></div>
+						<div></div>
+						<div></div>
+					</button>
+					<img src={logo} alt="agrotick logo" />
+					<div className="div container">
+						<img src={play} alt="playstore" />
+					</div>
+				</div>
+			</nav>
+			<NavMob />
+		</>
 	);
 }
