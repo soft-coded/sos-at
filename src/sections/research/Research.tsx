@@ -7,6 +7,7 @@ import vars from "../../variables";
 
 const sliderSettings = {
 	dots: true,
+	adaptiveHeight: false,
 	infinite: true,
 	autoplay: true,
 	autoplaySpeed: 5000,

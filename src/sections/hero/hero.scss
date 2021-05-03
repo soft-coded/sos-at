@@ -9,6 +9,10 @@
     position: center;
     repeat: no-repeat;
   }
+
+  @media (max-width: $mobile-width-1) {
+    background-image: url(../../images/hero-mobbg.jpg);
+  }
   
   .inner {
     height: 100%;
@@ -30,7 +34,8 @@
 
       @media (max-width: $mobile-width-1) {
         font-size: 2rem;
-        max-width: 69%;
+        max-width: unset;
+        text-align: center;
       }
     }
 

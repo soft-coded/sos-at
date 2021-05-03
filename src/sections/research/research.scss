@@ -5,14 +5,18 @@
   padding-bottom: 100px;
 
   @media (max-width: $mobile-width-1){
-    padding-bottom: 50px;   
+    padding-bottom: 50px;
   }
-  
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
   .research-item {
-    height: 600px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: $shadow-1;
-    margin: 20px;
+    margin: 10px;
     padding: 50px;
     letter-spacing: 2px;
     transition: $transition-1;
@@ -25,7 +29,7 @@
 
     @media (max-width: $mobile-width-1){
       padding: 20px;
-      margin: 10px 20px;
+      margin: 10px;
     }
 
     h1 {

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { GrMenu } from "react-icons/gr";
 
 import "./navbar.scss";
 import NavList from "./Navlist";
@@ -36,9 +37,7 @@ export default function Navbar() {
 			<nav className="nav-mob-top">
 				<div className="inner">
 					<button className="nav-mob-btn" onClick={handleOpen}>
-						<div></div>
-						<div></div>
-						<div></div>
+						<GrMenu size={30} />
 					</button>
 					<img src={logo} alt="agrotick logo" />
 					<div className="container">
