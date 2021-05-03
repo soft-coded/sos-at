@@ -28,7 +28,7 @@ export default function Second() {
 				".second-detail .container"
 			);
 			containers.forEach(container => {
-				container.addEventListener("touchstart", () => {
+				container.addEventListener("click", () => {
 					const overlay = container.querySelector<HTMLElement>(".hidden");
 					if (overlay.style.opacity === "1") {
 						overlay.style.opacity = "0";

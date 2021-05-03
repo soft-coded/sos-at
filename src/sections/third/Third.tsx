@@ -12,7 +12,7 @@ export default function Third() {
 				".third .grid-item"
 			);
 			containers.forEach(container => {
-				container.addEventListener("touchstart", () => {
+				container.addEventListener("click", () => {
 					const overlay = container.querySelector<HTMLElement>("article");
 					if (overlay.style.opacity === "1") {
 						overlay.style.opacity = "0";
