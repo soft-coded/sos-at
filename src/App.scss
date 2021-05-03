@@ -13,7 +13,6 @@ html {
 
 body {
 	font-family: $poppins;
-	// color: $dark-1;
 	color: $light-1;
 	overflow-x: hidden;
 }
@@ -22,6 +21,10 @@ body {
 	max-width: 1200px;
 	padding: 0 30px;
 	margin: auto;
+
+	@media (max-width: $mobile-width-1) {
+		padding: 0 10px;
+	}
 }
 
 .backdrop {

@@ -5,14 +5,17 @@ import NavList from "./Navlist";
 import NavMob from "./NavMob";
 import logo from "../../images/logo.png";
 import play from "../../images/playstore.png";
+import vars from "../../variables";
 
 export default function Navbar() {
 	useEffect(() => {
-		window.addEventListener("scroll", () => {
-			const nav = document.querySelector<HTMLElement>(".nav-pc");
-			if (window.pageYOffset > 2) nav.className = "nav-pc sticky";
-			else nav.className = "nav-pc";
-		});
+		if (!vars.matchWidth(vars.tabletWidth)) {
+			window.addEventListener("scroll", () => {
+				const nav = document.querySelector<HTMLElement>(".nav-pc");
+				if (window.pageYOffset > 2) nav.className = "nav-pc sticky";
+				else nav.className = "nav-pc";
+			});
+		}
 	}, []);
 
 	function handleOpen() {
@@ -38,7 +41,7 @@ export default function Navbar() {
 						<div></div>
 					</button>
 					<img src={logo} alt="agrotick logo" />
-					<div className="div container">
+					<div className="container">
 						<img src={play} alt="playstore" />
 					</div>
 				</div>

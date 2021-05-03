@@ -5,46 +5,46 @@ import "./research.scss";
 import SectionHeader from "../../components/section-header/SectionHeader";
 import vars from "../../variables";
 
-function matchWidth() {
-	return window.matchMedia("(max-width: " + vars.tabletWidth + ")").matches;
-}
-
 const sliderSettings = {
 	dots: true,
 	infinite: true,
 	autoplay: true,
 	autoplaySpeed: 5000,
 	pauseOnHover: true,
-	arrows: !matchWidth()
+	arrows: !vars.matchWidth(vars.tabletWidth)
 };
+
+function getContent(content: string) {
+	if (vars.matchWidth(vars.tabletWidth)) return content.substr(0, 500) + "...";
+	return content;
+}
 
 export default function Research() {
 	return (
 		<section id="research" className="research section">
 			<div className="inner">
 				<SectionHeader>
-					<h1>Problems Faced By Farmers</h1>
+					<h1>Problems Faced</h1>
 				</SectionHeader>
 				<Slider {...sliderSettings} className="slider">
-					{data.map(details => (
-						<div key={details.id}>
-							<div
-								className="research-item"
-								style={{
-									background: `url(${details.image}) no-repeat`,
-									backgroundPosition: "center",
-									backgroundSize: "cover"
-								}}
-							>
-								<h1>{details.title}</h1>
-								<p>
-									{matchWidth()
-										? details.content.substr(0, 500) + "..."
-										: details.content}
-								</p>
+					{data.map(details => {
+						const cont = getContent(details.content);
+						return (
+							<div key={details.id}>
+								<div
+									className="research-item"
+									style={{
+										background: `url(${details.image}) no-repeat`,
+										backgroundPosition: "center",
+										backgroundSize: "cover"
+									}}
+								>
+									<h1>{details.title}</h1>
+									<p>{cont}</p>
+								</div>
 							</div>
-						</div>
-					))}
+						);
+					})}
 				</Slider>
 			</div>
 		</section>

@@ -6,6 +6,12 @@ footer {
   color: $light-3;
   letter-spacing: 2px;
 
+  @media (max-width: $mobile-width-1){
+    letter-spacing: 0;   
+    font-size: 0.8rem;
+    padding: 0 10px;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -21,6 +27,11 @@ footer {
 
       @media (max-width: $tablet-width) {
         max-width: unset;
+      }
+
+      @media (max-width: $mobile-width-1){
+        font-size: 0.8rem;
+        margin-top: 20px;
       }
 
       .icons {
@@ -76,6 +87,10 @@ footer {
         margin-bottom: 30px;
       }
 
+      @media (max-width: $mobile-width-1){
+        max-width: 80%;
+      }
+
       form {
         margin-top: 20px;
         display: flex;
@@ -91,6 +106,10 @@ footer {
           font-weight: 600;
           background-color: $light-1;
           color: $dark-1;
+
+          @media (max-width: $mobile-width-1){
+            font-size: 0.8rem;
+          }
         }
         
         button {
@@ -98,6 +117,11 @@ footer {
           font-size: 1.1rem;
           color: $light-1;
           background-color: $secondary;
+
+          @media (max-width: $mobile-width-1){
+            font-size: 0.8rem;
+            padding: 7px 10px;
+          }
         }
       }
     }

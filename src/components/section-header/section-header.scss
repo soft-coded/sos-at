@@ -12,6 +12,13 @@
     font-size: 1.5rem;
   }
 
+  @media (max-width: $mobile-width-1) {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 40px 0; 
+    line-height: 2rem;  
+  }
+
   &::after {
     content: "";
     display: block;
@@ -22,5 +29,9 @@
     left: 50%;
     transform: translateX(-50%);
     margin-top: 10px;
+
+    @media (max-width: $mobile-width-1) {
+      margin-top: 5px;
+    }
   }
 }

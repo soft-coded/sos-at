@@ -3,6 +3,10 @@
 .research {
   background-color: $primary-light;
   padding-bottom: 100px;
+
+  @media (max-width: $mobile-width-1){
+    padding-bottom: 50px;   
+  }
   
   .research-item {
     height: 600px;
@@ -19,11 +23,20 @@
       }
     }
 
+    @media (max-width: $mobile-width-1){
+      padding: 20px;
+      margin: 10px 20px;
+    }
+
     h1 {
       font-size: 2.2rem;
 
       @media (max-width: $tablet-width) {
         font-size: 1.8rem;
+      }
+
+      @media (max-width: $mobile-width-1){
+        font-size: 1rem;
       }
     }
 
@@ -31,6 +44,12 @@
       margin: 40px 0;
       line-height: 1.5rem;
       font-weight: 600;
+
+      @media (max-width: $mobile-width-1){
+        line-height: unset;
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
     }
   }
 }

@@ -5,13 +5,9 @@ import "./third.scss";
 import SectionHeader from "../../components/section-header/SectionHeader";
 import vars from "../../variables";
 
-function matchWidth() {
-	return window.matchMedia("(max-width: " + vars.tabletWidth + ")").matches;
-}
-
 export default function Third() {
 	useEffect(() => {
-		if (matchWidth()) {
+		if (vars.matchWidth(vars.tabletWidth)) {
 			const containers = document.querySelectorAll<HTMLElement>(
 				".third .grid-item"
 			);

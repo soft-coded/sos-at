@@ -9,21 +9,34 @@
     background-color: $secondary-light;
     margin: 50px 0;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100%;
     box-shadow: $shadow-2;
+
+    @media (max-width: $mobile-width-1){
+      padding: 10px 0 15px;
+      margin: 10px 0 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px; 
+    }
   }
   
   .second-detail {
     display: flex;
     align-items: center;
     padding: 0 30px;
-    border-radius: 10px;
     margin: 40px 0;
+
+    @media (max-width: $mobile-width-1){
+      flex-direction: column;
+      padding: 0 10px;
+      margin: 0;
+    }
 
     .container {
       background-color: $light-2;
-      border-radius: 20px;
+      border-radius: 5px;
       padding: 20px 30px;
       width: 100%;
       position: relative;
@@ -42,21 +55,41 @@
       @media (max-width: $tablet-width) {
         padding: 20px 30px;
       }
+
+      @media (max-width: $mobile-width-1){
+        padding: 10px 15px;
+        text-align: center !important;
+      }
     }
 
     img {
       width: 200px;
+
+      @media (max-width: $mobile-width-1) {
+        margin: 20px 0;
+        width: 150px;
+      }
     }
 
     h1 {
       letter-spacing: 2px;
       color: $primary;
+
+      @media (max-width: $mobile-width-1){
+        font-size: 1.2rem;
+        letter-spacing: 0;
+      }
     }
 
     h2 {
       font-size: 1.1rem;
       margin-bottom: 15px;
       color: $secondary;
+
+      @media (max-width: $mobile-width-1){
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+      }
     }
 
     ul {
@@ -66,12 +99,21 @@
       @media (max-width: $tablet-width){
         padding: 0 10px;
       }
+      
+      @media (max-width: $mobile-width-1){
+        padding: 0 5px;
+        list-style: " - ";
+      }
 
       li {
         color: $dark-3;
 
         @media (max-width: $tablet-width){
           font-size: 0.9rem;
+        }
+
+        @media (max-width: $mobile-width-1){
+          font-size: 0.65rem;
         }
       }
 
@@ -86,12 +128,16 @@
         left: 0;
         right: 0;
         bottom: 0;
-        border-radius: 20px;
+        border-radius: 5px;
         padding: 30px 60px;
         overflow: auto;
 
         @media (max-width: $tablet-width){
           padding: 20px 40px;
+        }
+
+        @media (max-width: $mobile-width-1){
+          padding: 10px 40px;
         }
 
         li {
