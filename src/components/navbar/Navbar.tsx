@@ -4,17 +4,23 @@ import { GrMenu } from "react-icons/gr";
 import "./navbar.scss";
 import NavList from "./Navlist";
 import NavMob from "./NavMob";
-import logo from "../../images/logo.png";
-import play from "../../images/playstore.png";
+import logo from "../../images/favicon.png";
+import play from "../../images/playstore-mob.png";
 import vars from "../../variables";
 
 export default function Navbar() {
 	useEffect(() => {
-		if (!vars.matchWidth(vars.tabletWidth)) {
+		if (!vars.matchWidth(vars.mobileWidth1)) {
 			window.addEventListener("scroll", () => {
 				const nav = document.querySelector<HTMLElement>(".nav-pc");
 				if (window.pageYOffset > 2) nav.className = "nav-pc sticky";
 				else nav.className = "nav-pc";
+			});
+		} else {
+			window.addEventListener("scroll", () => {
+				const navTop = document.querySelector<HTMLElement>(".nav-mob-top");
+				if (window.pageYOffset > 2) navTop.style.top = "0";
+				else navTop.style.top = "-100px";
 			});
 		}
 	}, []);

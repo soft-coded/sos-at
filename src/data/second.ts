@@ -1,7 +1,7 @@
-import agriNet from "../images/agrinet.svg";
-import eMarket from "../images/emarket.svg";
-import farmer from "../images/farmer.svg";
-import growSmart from "../images/growsmart.svg";
+import agriNet from "../images/agrinet2.svg";
+import eMarket from "../images/emarket2.svg";
+import farmer from "../images/farmer2.svg";
+import growSmart from "../images/growsmart2.svg";
 
 // eslint-disable-next-line
 export default [
@@ -16,8 +16,7 @@ export default [
 			"Apply to crop loans and insurance easily",
 			"Give vocational training and jobs to women",
 			"Provide subsidized education to children",
-			"Track financial support from government securely",
-			"Provide health and life insurance to family"
+			"Track financial support from government securely"
 		]
 	},
 	{

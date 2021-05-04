@@ -1,7 +1,9 @@
-import farmers from "../images/farmer.svg";
-import scientist from "../images/scientist.svg";
-import tractor from "../images/tractor.svg";
-import handshake from "../images/handshake.svg";
+import farmers from "../images/farmer3.svg";
+import scientist from "../images/scientist2.svg";
+import tractor from "../images/tractor2.svg";
+import handshake from "../images/handshake2.svg";
+import pkg from "../images/package.svg";
+import finance from "../images/finance.svg";
 
 //eslint-disable-next-line
 export default [
@@ -37,7 +39,7 @@ export default [
 	},
 	{
 		id: 5,
-		image: "https://image.flaticon.com/icons/png/512/858/858114.png",
+		image: finance,
 		title: "Agro Finance",
 		content:
 			"Financial support, crop Inputs, machinery rentals for the farmers.",
@@ -45,7 +47,7 @@ export default [
 	},
 	{
 		id: 6,
-		image: "https://image.flaticon.com/icons/svg/1186/1186994.svg",
+		image: pkg,
 		title: "Retail Chains & Consumers",
 		content: "Doorstep delivery of the produce by the farmers.",
 		list: ["Agro Mart"]

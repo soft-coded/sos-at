@@ -25,10 +25,6 @@
       margin: 0 15px;
       transition: $transition-1;
 
-      &:active, &:focus {
-        color: $primary-light;
-      }
-
       @media (hover: hover){
         &:hover {
           color: $primary-light;
@@ -63,17 +59,19 @@
 }
 
 .nav-mob-top {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  right: 0;
+  transition: $transition-1;
+  z-index: 7;
+  background: #e4ffd2f2;
+
 
   .inner {
     display: none;
     align-items: center;
-    background: $light-1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     box-shadow: $shadow-1;
-    z-index: 7;
     
     @media (max-width: $tablet-width) {
       display: flex;
@@ -89,12 +87,8 @@
     }
     
     img {
-      width: 150px;
-      margin: 10px 20px;
-
-      @media (max-width: $mobile-width-1){
-        width: 120px;
-      }
+      margin: 5px 20px;
+      width: 37px;
     }
     
     .container {
@@ -105,6 +99,7 @@
 
       img {
         margin: 0;
+        width: 30px;
       }
     }
   }
@@ -113,7 +108,6 @@
 .nav-side-menu {
 	display: none;
 	align-items: center;
-	justify-content: center;
 	flex-direction: column;
 	position: fixed;
 	top: 0;
@@ -121,8 +115,8 @@
 	bottom: 0;
 	z-index: 9;
 	width: 33vw;
-	background-color: $light-1;
-	color: $dark-1;
+	background-color: $primary-light;
+	color: $secondary;
 	padding: 30px 0;
 	transition: all 0.3s ease-in-out;
 	transform: translateX(-100%);
@@ -132,7 +126,7 @@
 	}
 
 	@media (max-width: $mobile-width-1) {
-		width: 50vw;
+		width: 60vw;
 	}
 
 	ul {
@@ -144,15 +138,13 @@
 		list-style: none;
     
 		li {
-      margin: 20px 0;
+      margin: 10px 0;
 			font-size: 1.1rem;
-      text-align: center;
       font-weight: 600;
-      letter-spacing: 1px;
-
+      border-bottom: 3px solid $secondary;
+      
       .playstore { 
         width: 150px;
-        border: 1px solid white;
         border-radius: 5px;
       }
 		}
