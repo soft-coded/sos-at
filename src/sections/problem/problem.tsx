@@ -1,7 +1,19 @@
+import Slider from "react-slick";
+
 import data from "../../data/research";
 import "./problem.scss";
 import SectionHeader from "../../components/section-header/SectionHeader";
 import vars from "../../variables";
+
+const sliderSettings = {
+	dots: true,
+	adaptiveHeight: false,
+	infinite: true,
+	autoplay: true,
+	autoplaySpeed: 5000,
+	pauseOnHover: true,
+	arrows: !vars.matchWidth(vars.tabletWidth)
+};
 
 function getContent(content: string) {
 	if (vars.matchWidth(vars.tabletWidth)) return content.substr(0, 500) + "...";
@@ -15,7 +27,7 @@ export default function Research() {
 				<SectionHeader>
 					<h1>Problems</h1>
 				</SectionHeader>
-				<div className="grid">
+				<Slider {...sliderSettings} className="slider">
 					{data.map(details => {
 						const cont = getContent(details.content);
 						return (
@@ -34,7 +46,7 @@ export default function Research() {
 							</div>
 						);
 					})}
-				</div>
+				</Slider>
 			</div>
 		</section>
 	);
