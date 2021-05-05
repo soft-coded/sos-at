@@ -3,29 +3,6 @@ import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
 import "./footer.scss";
 import data from "../../data/footer";
 
-// function isScrolledIntoView(elem)
-// {
-//     var docViewTop = $(window).scrollTop();
-//     var docViewBottom = docViewTop + $(window).height();
-//     var elemTop = $(elem).offset().top;
-//     var elemBottom = elemTop + $(elem).height();
-//     return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-// }
-
-// $(window).scroll(function() {
-//     if(isScrolledIntoView($('#theTarget')))
-//     {
-//         alert('visible');
-//     }
-// });
-
-// function scrolledIntoView(_class: string) {
-// 	let winTop = window.pageYOffset;
-// 	let winBottom = winTop + window.innerHeight;
-// 	let elemTop = document.querySelector<HTMLElement>(_class);
-// 	let elemBottom = elemTop.clientHeight;
-// }
-
 export default function Footer() {
 	return (
 		<footer id="footer">
@@ -47,20 +24,9 @@ export default function Footer() {
 					<div className="contact">
 						<h2>Contact</h2>
 						<ul>
-							{data.contact.map((item, i) => (
-								<li key={i}>{item}</li>
-							))}
-						</ul>
-					</div>
-					<div className="site-links">
-						<h2>Site Links</h2>
-						<ul>
-							{data.siteLinks.map((item, i) => (
-								<li key={i}>
-									{/* eslint-disable-next-line */}
-									<a href={item.link}>{item.text}</a>
-								</li>
-							))}
+							<a href={`mailto:${data.contact}`}>
+								<li>{data.contact}</li>
+							</a>
 						</ul>
 					</div>
 					<div className="newsletter">

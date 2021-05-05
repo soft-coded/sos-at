@@ -1,9 +1,8 @@
 @import "../../variables.scss";
 
 .research {
-	// background-color: rgb(255, 79, 79);
-	background-image: linear-gradient(#99756a, #998e6a);
-	padding-bottom: 100px;
+	background-image: linear-gradient(#99756a, #a39271);
+	padding: 20px 0;
 
 	@media (max-width: $mobile-width-1) {
 		padding-bottom: 50px;

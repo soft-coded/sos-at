@@ -5,14 +5,20 @@
 	overflow: hidden;
 	color: $dark-1;
 
+	h2 {
+		font-size: 1rem;
+		text-align: center;
+		color: $dark-2;
+		font-weight: 600;
+	}
+
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		margin: 30px 0 100px;
-		gap: 2rem;
-		// background-color: rgb(80, 235, 163);
+		margin: 20px 0;
+		gap: 30px;
 		background-image: linear-gradient(#2cbf8a, #03734b);
-		padding: 50px;
+		padding: 30px;
 		border-radius: 5px;
 		box-shadow: $shadow-2;
 

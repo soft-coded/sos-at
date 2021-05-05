@@ -1,9 +1,9 @@
 import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./sections/hero/Hero";
-import Second from "./sections/second/Second";
-import Third from "./sections/third/Third";
-import Research from "./sections/research/Research";
+import Features from "./sections/features/features";
+import Solution from "./sections/solution/solution";
+import Problem from "./sections/problem/problem";
 import Footer from "./sections/footer/Footer";
 
 export default function App() {
@@ -13,9 +13,9 @@ export default function App() {
 			<main>
 				<div className="backdrop" />
 				<Hero />
-				<Second />
-				<Third />
-				<Research />
+				<Problem />
+				<Solution />
+				<Features />
 				<Footer />
 			</main>
 		</>

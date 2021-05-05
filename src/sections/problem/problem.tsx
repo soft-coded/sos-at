@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 
 import data from "../../data/research";
-import "./research.scss";
+import "./problem.scss";
 import SectionHeader from "../../components/section-header/SectionHeader";
 import vars from "../../variables";
 
@@ -25,7 +25,7 @@ export default function Research() {
 		<section id="research" className="research section">
 			<div className="inner">
 				<SectionHeader>
-					<h1>Problems Faced</h1>
+					<h1>Problem</h1>
 				</SectionHeader>
 				<Slider {...sliderSettings} className="slider">
 					{data.map(details => {

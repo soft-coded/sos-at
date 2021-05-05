@@ -1,160 +1,142 @@
 @import "../../variables.scss";
 
 footer {
-  background-color: $dark-1;
-  padding: 30px 0;
-  color: grey;
-  letter-spacing: 2px;
+	background-color: $dark-1;
+	padding: 30px 0;
+	color: grey;
+	letter-spacing: 2px;
 
-  @media (max-width: $mobile-width-1){
-    letter-spacing: 0;   
-    font-size: 0.8rem;
-    padding: 0 10px;
-  }
+	@media (max-width: $mobile-width-1) {
+		letter-spacing: 0;
+		font-size: 0.8rem;
+		padding: 0 10px;
+	}
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
 
-    @media (max-width: $tablet-width) {
-      flex-direction: column;
-    }
+		@media (max-width: $tablet-width) {
+			flex-direction: column;
+		}
 
-    .desc {
-      max-width: 25%;
-      align-self: center;
+		.desc {
+			max-width: 25%;
+			align-self: center;
 
-      @media (max-width: $tablet-width) {
-        max-width: unset;
-      }
+			@media (max-width: $tablet-width) {
+				max-width: unset;
+			}
 
-      @media (max-width: $mobile-width-1){
-        font-size: 0.8rem;
-        margin-top: 20px;
-      }
+			@media (max-width: $mobile-width-1) {
+				font-size: 0.8rem;
+				margin-top: 20px;
+			}
 
-      .icons {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-    
-        svg {
-          opacity: 0.7;
-          transition: $transition-1;
-          
-          @media (hover: hover){
-            &:hover{
-              opacity: 1;
-            }
-          }
+			.icons {
+				display: flex;
+				align-items: center;
+				margin-top: 20px;
 
-          @media (max-width: $tablet-width) {
-            opacity: 1;
-          }
-        }
+				svg {
+					opacity: 0.7;
+					transition: $transition-1;
 
-        .twitter {
-          margin-left: 20px;
-        }
-      }
-    }
+					@media (hover: hover) {
+						&:hover {
+							opacity: 1;
+						}
+					}
 
-    .site-links {
-      max-width: 25%;
+					@media (max-width: $tablet-width) {
+						opacity: 1;
+					}
+				}
 
-      @media (max-width: $tablet-width) {
-        max-width: unset;
-      }
+				.twitter {
+					margin-left: 20px;
+				}
+			}
+		}
 
-      ul {
-        
-        @media (max-width: $tablet-width) {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          flex-wrap: wrap;
-        }
-      }
+		.newsletter {
+			max-width: 20%;
 
-    }
+			@media (max-width: $tablet-width) {
+				max-width: unset;
+				margin-bottom: 30px;
+			}
 
-    .newsletter {
-      max-width: 20%;
+			@media (max-width: $mobile-width-1) {
+				max-width: 80%;
+			}
 
-      @media (max-width: $tablet-width) {
-        max-width: unset;
-        margin-bottom: 30px;
-      }
+			form {
+				margin-top: 20px;
+				display: flex;
 
-      @media (max-width: $mobile-width-1){
-        max-width: 80%;
-      }
+				input {
+					border: none;
+					max-width: 90%;
+					padding: 0 15px;
+					border-radius: 5px 0 0 5px;
+					font-family: inherit;
+					font-size: 1.1rem;
+					letter-spacing: 1px;
+					font-weight: 600;
+					background-color: $light-1;
+					color: $dark-1;
 
-      form {
-        margin-top: 20px;
-        display: flex;
+					@media (max-width: $mobile-width-1) {
+						font-size: 0.8rem;
+					}
+				}
 
-        input {
-          border: none;
-          max-width: 90%;
-          padding: 0 15px;
-          border-radius: 5px 0 0 5px;
-          font-family: inherit;
-          font-size: 1.1rem;
-          letter-spacing: 1px;
-          font-weight: 600;
-          background-color: $light-1;
-          color: $dark-1;
+				button {
+					border-radius: 0 5px 5px 0;
+					font-size: 1.1rem;
+					color: $light-1;
+					background: transparent;
+					background-image: linear-gradient(-45deg, #03734cee, #7d3a27ee);
 
-          @media (max-width: $mobile-width-1){
-            font-size: 0.8rem;
-          }
-        }
-        
-        button {
-          border-radius: 0 5px 5px 0;
-          font-size: 1.1rem;
-          color: $light-1;
-          background-color: $secondary;
+					@media (max-width: $mobile-width-1) {
+						font-size: 0.8rem;
+						padding: 7px 10px;
+					}
+				}
+			}
+		}
+	}
 
-          @media (max-width: $mobile-width-1){
-            font-size: 0.8rem;
-            padding: 7px 10px;
-          }
-        }
-      }
-    }
-  }
+	h2 {
+		font-size: 1.1rem;
+		color: $light-2;
+	}
 
-  h2 {
-    font-size: 1.1rem;
-    color: $light-2;
-  }
+	ul {
+		list-style: none;
 
-  ul {
-    list-style: none;
-    
-    li {
-      margin: 20px 0;
-      transition: $transition-1;
+		li {
+			margin: 20px 0;
+			transition: $transition-1;
 
-      &:active {
-        color: $light-1;
-      }
-      
-      @media (hover: hover){
-        &:hover {
-          color: $light-1;
-        }
-      }
-    }
-  }
+			&:active {
+				color: $light-1;
+			}
 
-  .copy {
-    text-align: center;
-    color: $light-1;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
+			@media (hover: hover) {
+				&:hover {
+					color: $light-1;
+				}
+			}
+		}
+	}
+
+	.copy {
+		text-align: center;
+		color: $light-1;
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
 }

@@ -45,9 +45,17 @@ export default function Navbar() {
 					<button className="nav-mob-btn" onClick={handleOpen}>
 						<GrMenu size={30} />
 					</button>
-					<img src={logo} alt="agrotick logo" />
+					<a href="#home">
+						<img src={logo} alt="agrotick logo" />
+					</a>
 					<div className="container">
-						<img src={play} alt="playstore" />
+						<a
+							href="https://play.google.com/store/apps/details?id=com.systemonsilicon.agrotick&hl=en&gl=US"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={play} alt="playstore" />
+						</a>
 					</div>
 				</div>
 			</nav>

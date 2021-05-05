@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import data from "../../data/third";
-import "./third.scss";
+import "./solution.scss";
 import SectionHeader from "../../components/section-header/SectionHeader";
 import vars from "../../variables";
 
@@ -30,8 +30,12 @@ export default function Third() {
 		<section id="third" className="third">
 			<div className="inner">
 				<SectionHeader>
-					<h1>Help Provided</h1>
+					<h1>Solution</h1>
 				</SectionHeader>
+				<h2>
+					Agrotick: An agri-tech platform for climate smart and precision
+					agriculture.
+				</h2>
 				<div className="grid">
 					{data.map(details => (
 						<div className="grid-item" key={details.id}>

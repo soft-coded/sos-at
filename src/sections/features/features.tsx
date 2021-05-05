@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import "./second.scss";
+import "./features.scss";
 import data from "../../data/second";
 import SectionHeader from "../../components/section-header/SectionHeader";
 import vars from "../../variables";
@@ -46,7 +46,7 @@ export default function Second() {
 		<section id="second" className="second">
 			<div className="inner">
 				<SectionHeader>
-					<h1>Our Services</h1>
+					<h1>Features</h1>
 				</SectionHeader>
 				<div className="grid">
 					{data.map(details => {

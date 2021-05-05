@@ -13,19 +13,25 @@ export default function Navlist() {
 				<a href="#home">Home</a>
 			</li>
 			<li>
+				<a href="#research">Problem</a>
+			</li>
+			<li>
+				<a href="#third">Solution</a>
+			</li>
+			<li>
 				<a href="#second">Features</a>
-			</li>
-			<li>
-				<a href="#third">You</a>
-			</li>
-			<li>
-				<a href="#research">Research</a>
 			</li>
 			<li>
 				<a href="#footer">Contact</a>
 			</li>
 			<li>
-				<img src={play} alt="PlayStore" className="playstore" />
+				<a
+					href="https://play.google.com/store/apps/details?id=com.systemonsilicon.agrotick&hl=en&gl=US"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<img src={play} alt="PlayStore" className="playstore" />
+				</a>
 			</li>
 		</ul>
 	);
