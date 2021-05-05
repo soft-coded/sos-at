@@ -1,84 +1,82 @@
 @import "../../variables.scss";
 
 .hero {
-  height: 100vh;
-  width: 100vw;
-  background: {
-    image: url(../../images/hero-bg.jpg);
-    size: cover;
-    position: center;
-    repeat: no-repeat;
-  }
+	height: 100vh;
+	width: 100vw;
+	background: {
+		image: url(../../images/bg1.jpg);
+		size: cover;
+		position: center;
+		repeat: no-repeat;
+	}
 
-  @media (max-width: $mobile-width-1) {
-    background-image: url(../../images/hero-mobbg.jpg);
-  }
-  
-  .inner {
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+	@media (max-width: $mobile-width-1) {
+		background-image: url(../../images/hero-mobbg.jpg);
+	}
 
-    @media (max-width: $mobile-width-1) {
-      align-items: center;
-    }
+	.inner {
+		height: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-      letter-spacing: 2px;
-      max-width: 50%;
-      line-height: 2.6rem;
+		@media (max-width: $mobile-width-1) {
+			align-items: center;
+		}
 
-      @media (max-width: $mobile-width-1) {
-        font-size: 2rem;
-        max-width: unset;
-        text-align: center;
-      }
-    }
+		h1 {
+			font-size: 4rem;
+			max-width: 50%;
+			margin-bottom: 20px;
+			padding: 30px 0;
+			letter-spacing: 2px;
+			line-height: 4rem;
+			background: linear-gradient(90deg, $light-2, $light-3);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
 
-    h2 {
-      margin: 20px;
-      position: relative;
-      letter-spacing: 2px;
-      font-weight: 500;
+			@media (max-width: $mobile-width-1) {
+				font-size: 2rem;
+				max-width: unset;
+				text-align: center;
+			}
+		}
 
-      @media (max-width: $mobile-width-1){
-        font-size: 1.4rem;
-      }
-      
-      &::before {
-        content: "\2714";
-        font-size: 3rem;
-        position: absolute;
-        top: -100%;
-        left: -13%;
-        color: $primary
-      }
-    }
+		h2 {
+			position: relative;
+			letter-spacing: 2px;
+			font-weight: 500;
 
-    button {
-      font-size: 1rem;
-      margin-top: 30px;
-      transition: $transition-1;
-      color: $light-1;
-      background-color: $primary;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
+			@media (max-width: $mobile-width-1) {
+				font-size: 1.4rem;
+			}
+		}
 
-      svg {
-        margin-right: 10px;
-      }
+		button {
+			font-size: 1rem;
+			margin-top: 30px;
+			transition: $transition-1;
+			color: $light-1;
+			// background-color: $primary;
+			background: transparent;
+			background-image: linear-gradient(-45deg, #03734cee, #7d3a27ee);
+			cursor: pointer;
+			display: flex;
+			align-items: center;
 
-      @media (hover: hover) {
-        &:hover, &:active, &:focus {
-          box-shadow: 0 0 15px $light-1;
-        }
-      }
-    }
-  }
+			svg {
+				margin-right: 10px;
+			}
 
+			@media (hover: hover) {
+				&:hover,
+				&:active,
+				&:focus {
+					box-shadow: 0 0 15px $light-1;
+				}
+			}
+		}
+	}
 }

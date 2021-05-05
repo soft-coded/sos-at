@@ -1,37 +1,37 @@
 @import "../../variables.scss";
 
 .section-header {
-  font-size: 1.8rem;
-  text-align: center;
-  padding: 50px 0;
-  color: $dark-2;
-  letter-spacing: 2px;
-  position: relative;
+	font-size: 1.8rem;
+	text-align: center;
+	padding: 50px 0;
+	color: $dark-1;
+	letter-spacing: 2px;
+	position: relative;
 
-  @media (max-width: $tablet-width) {
-    font-size: 1.5rem;
-  }
+	@media (max-width: $tablet-width) {
+		font-size: 1.5rem;
+	}
 
-  @media (max-width: $mobile-width-1) {
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    padding: 40px 0; 
-    line-height: 2rem;  
-  }
+	@media (max-width: $mobile-width-1) {
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+		padding: 40px 0;
+		line-height: 2rem;
+	}
 
-  &::after {
-    content: "";
-    display: block;
-    border-bottom: 5px solid $secondary;
-    border-radius: 2px;
-    width: 3rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
+	&::after {
+		content: "";
+		display: block;
+		border-bottom: 5px solid $secondary;
+		border-radius: 2px;
+		width: 3rem;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-top: 10px;
 
-    @media (max-width: $mobile-width-1) {
-      margin-top: 5px;
-    }
-  }
+		@media (max-width: $mobile-width-1) {
+			margin-top: 5px;
+		}
+	}
 }
