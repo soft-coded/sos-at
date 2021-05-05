@@ -38,9 +38,10 @@
 			-webkit-text-fill-color: transparent;
 
 			@media (max-width: $mobile-width-1) {
-				font-size: 2rem;
+				font-size: 2.2rem;
 				max-width: unset;
 				text-align: center;
+				line-height: 2.3rem;
 			}
 		}
 
