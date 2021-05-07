@@ -17,7 +17,11 @@
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		margin: 20px 0;
 		gap: 30px;
-		background-image: linear-gradient(#2cbf8a, #03734b);
+		background: {
+			image: url(../../images/solutionbg.jpg);
+			size: cover;
+			position: center;
+		}
 		padding: 30px;
 		border-radius: 5px;
 		box-shadow: $shadow-2;
@@ -100,14 +104,13 @@
 
 			p {
 				color: $light-2;
-				font-weight: 600;
 				font-size: 0.9rem;
 			}
 
 			ul {
 				list-style-position: inside;
 				list-style-type: "\2714   ";
-				font-weight: 600;
+				letter-spacing: 1.5px;
 				color: $light-1;
 
 				li {

@@ -54,6 +54,7 @@
 	background-color: $nav;
 	color: $dark-1;
 	box-shadow: $shadow-1;
+	backdrop-filter: blur(5px);
 }
 
 .nav-mob-top {
@@ -63,7 +64,8 @@
 	right: 0;
 	transition: $transition-1;
 	z-index: 7;
-	background: #e4ffd2f2;
+	background: $light-3;
+	backdrop-filter: blur(5px);
 
 	.inner {
 		display: none;

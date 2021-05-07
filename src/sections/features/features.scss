@@ -6,9 +6,16 @@
 	background-image: linear-gradient(#99756a, #a39271);
 
 	.grid {
-		background-image: linear-gradient(#bf6a39, #bf472c);
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: 30px;
+		background: {
+			image: url(../../images/featuresbg.jpg);
+			size: cover;
+			position: center;
+		}
 		margin: 20px 0;
-		padding: 0.1px 30px;
+		padding: 30px;
 		border-radius: 5px;
 		width: 100%;
 		box-shadow: $shadow-2;
@@ -25,21 +32,21 @@
 	.second-detail {
 		display: flex;
 		align-items: center;
-		margin: 30px 0;
+		flex-direction: column;
 
 		@media (max-width: $mobile-width-1) {
-			flex-direction: column;
 			padding: 0 20px;
-			margin: 0;
 		}
 
 		.container {
 			background-color: $light-3;
 			border-radius: 5px;
-			padding: 20px 30px;
+			padding: 10px;
 			width: 100%;
+			height: 100%;
 			position: relative;
 			box-shadow: $shadow-2;
+			text-align: center;
 
 			@media (hover: hover) {
 				&:hover {
@@ -56,13 +63,12 @@
 
 			@media (max-width: $mobile-width-1) {
 				padding: 10px 15px;
-				text-align: center !important;
 			}
 		}
 
 		img {
 			width: 200px;
-			margin: 0 60px;
+			margin-bottom: 20px;
 
 			@media (max-width: $mobile-width-1) {
 				margin: 20px 0;
@@ -71,7 +77,7 @@
 		}
 
 		h1 {
-			letter-spacing: 2px;
+			letter-spacing: 1px;
 			color: $primary;
 
 			@media (max-width: $mobile-width-1) {
@@ -84,6 +90,7 @@
 			font-size: 1.1rem;
 			margin-bottom: 15px;
 			color: $secondary;
+			font-weight: unset;
 
 			@media (max-width: $mobile-width-1) {
 				margin-bottom: 5px;
@@ -113,7 +120,12 @@
 			}
 
 			.hidden {
-				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-evenly;
+				width: 100.1%;
+				height: 100.1%;
 				transition: $transition-1;
 				transform: translateX(-3%);
 				opacity: 0;
@@ -145,14 +157,4 @@
 			}
 		}
 	}
-}
-
-.slick-prev {
-	left: -4%;
-}
-
-.slick-next::before,
-.slick-prev::before {
-	color: black;
-	font-size: 2rem;
 }

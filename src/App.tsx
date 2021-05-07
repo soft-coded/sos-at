@@ -1,10 +1,11 @@
 import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./sections/hero/Hero";
-import Features from "./sections/features/features";
-import Solution from "./sections/solution/solution";
-import Problem from "./sections/problem/problem";
+import Features from "./sections/features/Features";
+import Solution from "./sections/solution/Solution";
+import Problem from "./sections/problem/Problem";
 import Footer from "./sections/footer/Footer";
+import Collabs from "./sections/collabs/Collabs";
 
 export default function App() {
 	return (
@@ -16,6 +17,7 @@ export default function App() {
 				<Problem />
 				<Solution />
 				<Features />
+				<Collabs />
 				<Footer />
 			</main>
 		</>

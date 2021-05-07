@@ -8,46 +8,45 @@ export default [
 	{
 		id: 1,
 		image: farmer,
-		direction: "l",
 		title: "Farmers First",
 		subtitle: "One stop solution",
 		content: [
 			"Search for jobs easily",
 			"Apply to crop loans and insurance easily",
-			"Give vocational training and jobs to women",
-			"Provide subsidized education to children",
+			"Vocational training and jobs to women provided",
+			"Subsidized education for children",
 			"Track financial support from government securely"
 		]
 	},
 	{
 		id: 2,
 		image: growSmart,
-		direction: "r",
 		title: "Agro Smart",
 		subtitle: "Become tech savvy",
 		content: [
 			"Know the best sustainable practices",
-			"Monitors the fields for nutrients, pH, irrigation, diseases",
-			"Know when to give medicines, nutrients, water, by how much"
+			"Monitor the fields for nutrients, pH, irrigation, diseases",
+			"Know when to give medicines",
+			"Know what nutrients to provide",
+			"Know how much to water"
 		]
 	},
 	{
 		id: 3,
 		image: eMarket,
-		direction: "l",
 		title: "Agro Mart",
 		subtitle: "From soil to foil",
 		content: [
 			"Buy seeds, medicines and fertilizers at best prices",
-			"Rent farm machinery & tech for a season at affordable prices",
-			"Know the retail market rates of produce. Sell the produce at just prices",
+			"Rent farm machinery and tech for a season at affordable prices",
+			"Know the retail market rates of produce",
+			"Sell the produce at just prices",
 			"Track the produce live, know the location of customers"
 		]
 	},
 	{
 		id: 4,
 		image: agriNet,
-		direction: "r",
 		title: "Agro Net",
 		subtitle: "Collaborative ecosystem",
 		content: [

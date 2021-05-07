@@ -22,6 +22,9 @@ export default function Navlist() {
 				<a href="#second">Features</a>
 			</li>
 			<li>
+				<a href="#collabs">Collaborations</a>
+			</li>
+			<li>
 				<a href="#footer">Contact</a>
 			</li>
 			<li>

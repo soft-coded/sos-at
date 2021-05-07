@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.collabs {
+	background-image: linear-gradient(#a39271, #99756a);
+	padding: 40px 0;
+
+	.slider-container {
+		margin: 20px 0;
+		border-radius: 5px;
+		background-color: $light-3;
+	}
+
+	.container {
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+		height: 250px;
+
+		img {
+			width: 200px;
+			filter: grayscale(100%);
+			transition: $transition-1;
+
+			@media (hover: hover) {
+				&:hover {
+					filter: grayscale(0);
+				}
+			}
+
+			@media (max-width: $mobile-width-1) {
+				filter: unset;
+			}
+		}
+	}
+}

@@ -59,3 +59,13 @@ a {
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 8;
 }
+
+.slick-prev {
+	left: -4%;
+}
+
+.slick-next::before,
+.slick-prev::before {
+	color: black;
+	font-size: 2rem;
+}
