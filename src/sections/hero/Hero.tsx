@@ -11,14 +11,16 @@ export default function Hero() {
 		<section id="home" className="hero">
 			<div className="inner">
 				<Modal show={showModal} setShowModal={setShowModal} />
-				<h1>Reinventing Agriculture</h1>
-				<h2>Productivity</h2>
-				<h2>Connectivity</h2>
-				<h2>Sustainability</h2>
-				<button onClick={() => setShowModal(true)}>
-					<BsFillCameraVideoFill size={23} />
-					Watch Video
-				</button>
+
+				<div className="heading">
+					<h1>Reinventing</h1>
+					<h1 className="agriculture">Agriculture.</h1>
+					<h2>Productivity. Connectivity. Sustainability.</h2>
+					<button onClick={() => setShowModal(true)}>
+						<BsFillCameraVideoFill size={23} />
+						Watch Video
+					</button>
+				</div>
 			</div>
 		</section>
 	);

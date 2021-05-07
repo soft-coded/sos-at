@@ -37,7 +37,10 @@ export default function Footer() {
 						</form>
 					</div>
 				</div>
-				<div className="copy">&copy; SystemOnSilicon</div>
+				<div className="copy">
+					&copy; SystemOnSilicon Corporation.
+					<div> All rights reserved.</div>
+				</div>
 			</div>
 		</footer>
 	);

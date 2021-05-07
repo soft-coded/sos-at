@@ -138,5 +138,12 @@ footer {
 		color: $light-1;
 		font-size: 1.2rem;
 		font-weight: 700;
+
+		div {
+			font-weight: 100;
+			color: rgb(145, 145, 145);
+			font-size: 1rem;
+			letter-spacing: 0;
+		}
 	}
 }
